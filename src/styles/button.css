@@ -1,0 +1,61 @@
+.btn-primary {
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  @apply bg-primary;
+  @apply hover:bg-primary-dark;
+  @apply text-zinc-800;
+  @apply font-semibold;
+  @apply px-4;
+  @apply py-2;
+  @apply rounded;
+  @apply transition;
+}
+
+.btn-destroy {
+  @apply flex;
+  @apply justify-center;
+  @apply bg-red-500;
+  @apply hover:bg-red-700;
+  @apply text-white;
+  @apply font-semibold;
+  @apply p-2;
+  @apply rounded;
+  @apply transition;
+  @apply cursor-pointer;
+}
+
+.swal2-confirm {
+  @apply bg-gray-600;
+  @apply hover:bg-gray-700;
+}
+
+.swal2-cancel {
+  @apply bg-red-700/80;
+  @apply hover:bg-red-800;
+}
+
+.btn-sidebar {
+  @apply flex;
+  @apply items-center;
+  @apply rounded-lg;
+  @apply px-2;
+  @apply py-1.5;
+  @apply text-gray-400;
+  @apply transition;
+  @apply duration-75;
+  @apply hover:bg-zinc-700/60;
+}
+
+.btn-sidebar-active {
+  @apply flex;
+  @apply items-center;
+  @apply rounded-lg;
+  @apply px-2;
+  @apply py-1.5;
+  @apply text-white;
+  @apply transition;
+  @apply duration-75;
+  @apply bg-zinc-700;
+  @apply hover:bg-zinc-700/60;
+}

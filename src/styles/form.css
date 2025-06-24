@@ -1,0 +1,21 @@
+.label {
+  @apply block;
+  @apply text-sm;
+  @apply font-medium;
+  @apply text-gray-200;
+}
+
+.input {
+  @apply rounded-lg;
+  @apply border;
+  @apply border-zinc-700;
+  @apply bg-zinc-800;
+  @apply px-3;
+  @apply py-2;
+  @apply text-sm;
+  @apply text-zinc-300;
+  @apply focus:ring-1;
+  @apply focus:ring-zinc-700;
+  @apply focus:outline-none;
+  @apply shadow-sm;
+}
