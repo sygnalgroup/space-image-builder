@@ -5,6 +5,18 @@ A fast and modern web app to generate beautiful **App Store / Play Store screens
 **Live Demo:**  
 [https://sygnalgroup.github.io/space-image-builder/](https://sygnalgroup.github.io/space-image-builder/)
 
+## ✨ Features
+
+- 📱 Supports **Apple** (iPhone & iPad) and **Android** (Phone & Tablet) screenshot templates
+- ...
+
+## 🖼️ Supported Screenshot Sizes
+
+- **Apple iPhone:** 1290 × 2796 px
+- **Apple iPad:** 2064 × 2752 px
+- **Android Phone:** 1440 × 3120 px
+- **Android Tablet:** 2064 × 2752 px and 1600 × 2560 px
+
 ---
 
 ## ✨ Features
