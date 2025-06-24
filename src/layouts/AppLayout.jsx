@@ -3,7 +3,6 @@ import { Outlet, useNavigate } from 'react-router';
 import { useAuth } from '~/hooks/useAuth';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Sidebar } from '~/components/Layout/Sidebar';
 import { LayoutContextProvider } from '~/contexts/LayoutContext';
 
 export const AppLayout = () => {
@@ -43,8 +42,6 @@ export const AppLayout = () => {
           autoClose={5000}
           style={{ zIndex: 9999 }}
         />
-
-        <Sidebar />
 
         <div className="sm:ml-70">
           <div className="flex h-screen text-white transition-colors duration-300">
