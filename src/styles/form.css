@@ -1,21 +1,7 @@
-.label {
-  @apply block;
-  @apply text-sm;
-  @apply font-medium;
-  @apply text-gray-200;
+.card-form {
+  @apply rounded-2xl border border-gray-200 bg-white p-6;
 }
 
-.input {
-  @apply rounded-lg;
-  @apply border;
-  @apply border-zinc-700;
-  @apply bg-zinc-800;
-  @apply px-3;
-  @apply py-2;
-  @apply text-sm;
-  @apply text-zinc-300;
-  @apply focus:ring-1;
-  @apply focus:ring-zinc-700;
-  @apply focus:outline-none;
-  @apply shadow-sm;
+.card-form-title {
+  @apply mb-4 text-2xl font-semibold;
 }

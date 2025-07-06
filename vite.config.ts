@@ -10,5 +10,5 @@ export default defineConfig({
       '~': '/src',
     },
   },
-  base: '/space-image-builder/',
+  base: '/',
 });

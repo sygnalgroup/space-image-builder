@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
-import Builder from '~/components/Builder';
+import { Button } from '~/core/ui/shadcn/components/ui/button';
 
 export const Root = () => {
   return (
@@ -12,15 +11,7 @@ export const Root = () => {
         </h1>
       </header>
 
-      {/* Hero Section */}
-      <main className="flex justify-center items-start min-h-[70vh] bg-gray-50 py-8">
-        <Builder />
-      </main>
-
-      {/* Footer */}
-      <footer className="mt-auto py-4 text-center text-sm text-gray-500 dark:text-zinc-400">
-        © {new Date().getFullYear()} SygnalGroup. All rights reserved.
-      </footer>
+      <Button variant="outline">Testing</Button>
     </div>
   );
 };

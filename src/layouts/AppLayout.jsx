@@ -4,12 +4,13 @@ import { useAuth } from '~/hooks/useAuth';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { LayoutContextProvider } from '~/contexts/LayoutContext';
+import { Sidebar, SIDEBAR_WIDTH } from '~/components/Sidebar';
 
 export const AppLayout = () => {
   const navigate = useNavigate();
 
   const [initialLoad, setInitialLoad] = useState(true);
-
+  const [collapsed, setCollapsed] = useState(false);
   const { currentUser, fetchCurrentUser } = useAuth();
 
   const isAuthenticated = !!currentUser;
@@ -36,25 +37,20 @@ export const AppLayout = () => {
 
   return (
     <LayoutContextProvider>
-      <div>
-        <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          style={{ zIndex: 9999 }}
-        />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        style={{ zIndex: 9999 }}
+      />
 
-        <div className="sm:ml-70">
-          <div className="flex h-screen text-white transition-colors duration-300">
-            <div className="flex flex-1 flex-col">
-              {/* <Navbar handleMenu={handleMenu} /> */}
+      <Sidebar collapsed={collapsed} setCollapsed={setCollapsed} />
 
-              <main className="main">
-                <Outlet />
-              </main>
-            </div>
-          </div>
-        </div>
-      </div>
+      <main
+        className="flex-1 overflow-hidden duration-300"
+        style={{ marginLeft: collapsed ? '80px' : `${SIDEBAR_WIDTH}px` }}
+      >
+        <Outlet />
+      </main>
     </LayoutContextProvider>
   );
 };

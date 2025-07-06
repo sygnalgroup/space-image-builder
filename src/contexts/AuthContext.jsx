@@ -8,9 +8,11 @@ export function AuthContextProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(null);
 
   const fetchCurrentUser = useCallback(async () => {
-    const { data } = await api.get('/auth/validate_token');
+    // const { data } = await api.get('/auth/validate_token');
 
-    const userData = data?.data;
+    // const userData = data?.data;
+
+    const userData = { id: 1, name: 'Mayander Caetano' };
 
     setCurrentUser(userData);
 

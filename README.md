@@ -1,42 +1,62 @@
-# Space Image Builder
+# placar.app Web
 
-A fast and modern web app to generate beautiful **App Store / Play Store screenshots** for your apps, with customizable backgrounds, overlays, and device frames.
+A modern web application for managing and displaying scores, built with React, Vite, and [shadcn/ui](https://ui.shadcn.com/) components.
 
-**Live Demo:**  
-[https://sygnalgroup.github.io/space-image-builder/](https://sygnalgroup.github.io/space-image-builder/)
+## Features
 
-## ✨ Features
+- ⚡️ Fast development with [Vite](https://vitejs.dev/)
+- 🎨 Beautiful UI using [shadcn/ui](https://ui.shadcn.com/)
+- 🛠️ Modular React components
+- 📱 Responsive design
 
-- 📱 Supports **Apple** (iPhone & iPad) and **Android** (Phone & Tablet) screenshot templates
-- ...
+## Getting Started
 
-## 🖼️ Supported Screenshot Sizes
+### Prerequisites
 
-- **Apple iPhone:** 1290 × 2796 px
-- **Apple iPad:** 2064 × 2752 px
-- **Android Phone:** 1440 × 3120 px
-- **Android Tablet:** 2064 × 2752 px and 1600 × 2560 px
+- [Node.js](https://nodejs.org/) (v16+)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
----
-
-## ✨ Features
-
-- 📱 Supports **Apple** (iPhone) and **Android** (Pixel) screenshot templates
-- 🎨 Custom background color
-- 🖼️ Overlay your own logo (with transparent PNG support)
-- 🟢 Elegant points-and-lines background effect (SVG/PNG overlay or procedural)
-- 🖼️ Import and generate multiple screenshots at once
-- 🔎 Screenshot images with rounded corners, drop shadow, and correct scaling/placement
-- 📦 Download each result individually or all as a ZIP
-- ⚡ Blazing fast Vite + React + Tailwind
-- 🛡️ 100% client-side, no uploads
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
+### Installation
 
 ```bash
-git clone https://github.com/sygnalgroup/space-image-builder.git
-cd space-image-builder
+git clone https://github.com/sygnalgroup/placar-app-web.git
+cd placar-app-web
+npm install
+# or
+yarn install
+```
+
+### Running the App
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The app will be available at [http://localhost:5173](http://localhost:5173).
+
+## Project Structure
+
+```
+placar-app-web/
+├── src/
+│   ├── components/    # Reusable UI components (shadcn/ui)
+│   ├── pages/         # Application pages
+│   └── main.tsx       # App entry point
+├── public/
+├── package.json
+└── vite.config.ts
+```
+
+## Customization
+
+- UI elements are built using [shadcn/ui](https://ui.shadcn.com/). You can customize them in the `components/` directory.
+
+## License
+
+MIT
+
+---
+
+Made with ❤️ using React, Vite, and shadcn/ui.

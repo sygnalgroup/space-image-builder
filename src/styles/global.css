@@ -1,0 +1,29 @@
+@theme {
+  --color-primary: #000;
+
+  --color-placar: #DEFC54;
+  --color-placar-100: #F0FEB4;
+  --color-placar-200: #E7FD82;
+  --color-placar-300: #DEFC54;
+  --color-placar-400: #D3FB1D;
+  --color-placar-500: #BAE204;
+  --color-placar-600: #91AF03;
+  --color-placar-700: #677D02;
+  --color-placar-800: #3E4B01;
+  --color-placar-900: #151900;
+
+  --color-secondary: #f4f4f5; /* light background */
+  --color-secondary-dark: #e4e4e7; /* hover or section background */
+
+  --text-color: black;
+  --background-color: #ffffff;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}
